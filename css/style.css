@@ -33,6 +33,8 @@ section {
     padding: 10rem 9% 2rem;
 }
 
+
+
 .header {
     position: fixed;
     top: 0;
@@ -169,6 +171,7 @@ span {
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
+    
 
 }
 
@@ -230,6 +233,7 @@ span {
     text-align: center;
     border: .2rem solid var(--bg-color);
     transition: .5s ease;
+    
 
 }
 
@@ -552,8 +556,7 @@ span {
     }
 }
 
-
-
-/* =============================================================== */
-
+#mais {
+    display: none;
+}
 

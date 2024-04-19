@@ -87,16 +87,21 @@ ScrollReveal().reveal('.home-content p, .about-content',  { origin: 'right' });
         }
 
 
-  // ========================================
+  // ======================================== esconder texto ============================ //
 
-  var btn = document.getElementById('btn-div');
-  var container = document.querySelector('.container');
-  btn.addEventListener('click', function() {
-      
-    if(container.style.display === 'block') {
-        container.style.display = 'none';
-    } else {
-        container.style.display = 'block';
-    }
-  });
-  
+
+function leiaMais(){
+  var pontos=document.getElementById("pontos");
+  var maisTexto=document.getElementById("mais");
+  var btnLeiaMais=document.getElementById("btn");
+
+  if(pontos.style.display === "none"){
+    pontos.style.display = "inline";
+    maisTexto.style.display="none";
+    btnLeiaMais.innerHTML="Leia Mais";
+  }else{
+    pontos.style.display = "none";
+    maisTexto.style.display="inline";
+    btnLeiaMais.innerHTML="Leia Menos";
+  }
+}
